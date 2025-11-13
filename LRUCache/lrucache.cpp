@@ -3,7 +3,7 @@
 #include <list>
 
 template<typename K,typename V>//K和V代表类型
-class LRUCache{
+class LRUCache{//least recently changed
 public:
     explicit LRUCache(size_t capacity):cap_(capacity){}
     //命中返回true,并将值赋值给out，同时将当前节点移动到链表头
